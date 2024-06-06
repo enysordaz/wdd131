@@ -1,0 +1,43 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / 300px 1fr auto;
+}
+
+header {
+    background: rgb(211, 211, 211);
+    padding: 2rem;
+    grid-column: 1 / 4;
+    color: rgb(58, 7, 110);
+}
+
+.left-sidebar, .right-sidebar {
+    padding: 1rem;
+}
+
+.left-sidebar {
+    background: rgb(58, 7, 110);
+    grid-column: 1 / 2;
+    color: white;
+}
+
+main {
+    background: rgb(209, 152, 255);
+    grid-column: 2 / 3;
+    padding: 1rem;
+    color: rgb(58, 7, 110);
+}
+
+.right-sidebar {
+    background: rgb(173, 145, 255);
+    grid-column: 3 / 4;
+    color: rgb(58, 7, 110);
+}
+
+footer {
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+    color: rgb(58, 7, 110);
+}
