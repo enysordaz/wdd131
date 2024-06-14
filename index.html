@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Enys Ordaz - Main page</title>
+    <link rel="stylesheet" href="./week01/styles/base.css">
+    <!-- Link to fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>WDD 131 - Enys</h1>
-    <link rel="html" href="week01/basic-layout.html">
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Enys Ordaz Narvaez</h1>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/enys-ordaz-narv%C3%A1ez-5a167b252/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/31?lang=eng&id=p20#p20" target="_blank">Scripture</a></li>
+            <li><a href="" target="_blank">Final Project</a></li>
+        </ul>
+    </nav>
+    <!--Nav bar seems to be under the header to be able to be under it, if not it will be on the same space as the header-->
+    <main>
+        <div class="card-container">
+            <section class="card">
+                <img class="my-picture" src="/week01/images/me.jpg" alt="my-picture">
+                <h2>About Me</h2>
+                <p>
+                    My name is Enys. I was born in Yucatan, Mexico. I am currently a student in Utah. I am happily married to my sweet and loving husband. I love talking to my family and traveling with them.
+                </p>
+                <span></span>
+                <hr class="line">
+                <h3>Utah, United States of America</h3>
+                <p>
+                    Utah is a landlocked state in the Mountain West sugbregion of the Western United States. Utah has three major geographic areas: the Rocky Mountains, the Basin and Ridge Region, and the Colorado Plateau. Slightly over half of all Utahns are members of the Church of Jesus Christ of Latter-day Saints. Salt Lake City has the world headquartes to the Latter-day Church. The LDS Church greatly influences Utahn culture, politics, and daily life.
+                </p>
+            </section>
+            <section class="card-2">
+                <div>
+                    <h2>Web Dev Resources</h2>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/">W3schools</a></li>
+                        <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                        <li><a href="https://www.codecademy.com/learn/introduction-to-javascript">Codecademy</a></li>
+                        <li><a href="https://www.udemy.com/">Udemy</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    <footer>
+        <div>
+            <p>
+            ©<span id="currentyear"></span> | Enys Ordaz Narvaez | Utah
+            </p>
+            <p id="lastModified">
+    
+            </p>
+        </div>
+    </footer>
 </body>
 </html>

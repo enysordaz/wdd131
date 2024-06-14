@@ -1,0 +1,134 @@
+/* -- Font commands for CSS
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Mobile */
+
+/* Header and navbar*/
+header {
+    background-color: rgb(58, 7, 110);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+header,
+main {
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+/*
+.navigation {
+    grid-column: 1/5;
+}
+*/
+
+nav {
+    width: 100%;
+    background-color: rgb(189, 188, 188);
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: rgb(58, 7, 110);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: overline;
+    background-color: rgb(173, 145, 255);
+}
+
+/*Cards for main content*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 2.5rem;
+    width: 90%;
+    max-width: 1000px;
+    margin: 5vh auto;
+}
+.card {
+    background-color: rgb(227, 210, 255);
+    max-width: fit-content;
+    border-radius: 16px;
+    padding: 3rem;
+}
+
+.my-picture {
+    float: right;
+    height: 200px;
+    border-radius: 15px;
+}
+
+hr.line{
+    border-top: 1px solid black;
+}
+
+.card-2 {
+    background-color: rgb(198, 183, 248);
+    max-width: fit-content;
+    border-radius: 16px;
+    padding: 3rem;
+}
+
+
+
+/* Larger views */
+@media (min-width: 640px){
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1  100%;
+    } 
+
+    .my-picture {
+        height: 300px;
+    }
+}
