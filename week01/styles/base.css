@@ -10,7 +10,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 */
 
 * {
@@ -20,48 +19,45 @@
 }
 
 body {
-    display: grid;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
-/* Mobile */
-
-/* Header and navbar*/
+/*Header and navbar*/
 header {
+    display: block;
     background-color: rgb(58, 7, 110);
     color: white;
-    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
     width: 100%;
 }
 
-header,
-main {
-    margin: 0 auto;
-}
-
-h1 {
+.header-title {
+    display: flex;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 2rem;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0%;
 }
 
-/*
-.navigation {
-    grid-column: 1/5;
+.my-name {
+    font-style: italic;
 }
-*/
 
 nav {
-    width: 100%;
+    display: block;
     background-color: rgb(189, 188, 188);
-    margin: 0 auto;
+    justify-content: space-around;
+    margin: 0;
+    transition: 0.5s;
+    width: 100%;
 }
 
 nav ul {
@@ -72,51 +68,184 @@ nav a {
     display: block;
     color: rgb(58, 7, 110);
     text-align: center;
-    padding: 1rem;
+    padding: 10px 30px;
     text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
 }
 
 nav a:hover {
-    text-decoration: overline;
     background-color: rgb(173, 145, 255);
+    text-transform: uppercase;
 }
 
-/*Cards for main content*/
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 100px;
-    gap: 2.5rem;
-    width: 90%;
-    max-width: 1000px;
-    margin: 5vh auto;
+/*Main body and cards with information*/
+main {
+    display: grid;
+    grid-template-columns: 70% auto;
 }
-.card {
-    background-color: rgb(227, 210, 255);
-    max-width: fit-content;
-    border-radius: 16px;
-    padding: 3rem;
+
+section {
+    border-width: 1px;
+    border-color: rgb(205, 205, 205);
+    border-style: solid;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#first-card {
+    grid-column: 1/2;
+    margin-right: 5px;
+}
+
+.about-header {
+    grid-column: 1/3;
+    background-color: rgb(58, 7, 110);
+    color: white;
+    padding: 1rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.me {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+.about-me-text {
+    display: block;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 20px;
 }
 
 .my-picture {
     float: right;
-    height: 200px;
+    grid-column: 2/3;
+    grid-row: 1/2;
     border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-hr.line{
-    border-top: 1px solid black;
+.my-state {
+    text-align: center;
+    grid-column: 1/3;
+    margin-bottom: 5px;
 }
 
-.card-2 {
-    background-color: rgb(198, 183, 248);
-    max-width: fit-content;
-    border-radius: 16px;
-    padding: 3rem;
+hr {
+    grid-column: 1/3;
+}
+
+.state {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+.state-info {
+    display: block;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin-right: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.flag-pic {
+    float: left;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.flag-text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: italic;
 }
 
 
+#second-card {
+    grid-column: 2/3;
+    margin-left: 5px;
+}
+
+.dev-header {
+    grid-column: 2/3;
+    grid-row: 1/1;
+    background-color: rgb(58, 7, 110);
+    color: white;
+    padding: 1rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+ul {
+    grid-column: 1/2;
+    margin-left: 10px;
+    list-style-type: none;
+    display: block;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(58, 7, 110);
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.link:hover {
+    background-color: rgb(173, 145, 255);
+    text-transform: uppercase;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(58, 7, 110);
+    color: white;
+    font-size: 20px;
+}
 
 /* Larger views */
 @media (min-width: 640px){
@@ -129,6 +258,7 @@ hr.line{
     } 
 
     .my-picture {
-        height: 300px;
+        height: 200px;
     }
 }
+
