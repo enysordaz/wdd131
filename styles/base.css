@@ -13,52 +13,54 @@ body {
 
 /*Header and navbar*/
 header {
-    display: block;
-    background-color: rgb(58, 7, 110);
-    color: white;
+    background-color: #3a076e;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
     padding-top: 20px;
-    width: 100%;
 }
 
-.header-title {
-    display: flex;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+header,
+main {
+	margin: 0 auto;
+}
+
+h1 {
     font-size: 2rem;
-    justify-content: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin: 0%;
+    grid-column: 2/5;
 }
 
 nav {
-    display: block;
-    background-color: rgb(189, 188, 188);
-    justify-content: space-around;
-    margin: 0;
-    transition: 0.5s;
+    grid-column: 1/5;
+    background-color: #bdbcbc;
+    margin: 0 auto;
     width: 100%;
+    transition: 0.5s;
 }
 
 nav ul {
     list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    flex: 1 1 100%;
 }
 
 nav a {
     display: block;
-    color: rgb(58, 7, 110);
+    color: #3a076e;
     text-align: center;
-    padding: 10px 30px;
+    padding: 1rem;
     text-decoration: none;
     font-size: 20px;
     transition: 0.5s;
 }
 
 nav a:hover {
-    background-color: rgb(173, 145, 255);
+    background-color: #ad91ff;
     text-transform: uppercase;
 }
 
@@ -90,7 +92,7 @@ section {
     border-top-right-radius: 15px;
     align-items: center;
     justify-content: center;
-    display: flex;
+    display: grid;
 }
 
 .me {
@@ -101,10 +103,13 @@ section {
 }
 
 .about-me-text {
-    display: block;
+    display: grid;
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: justify;
     font-size: 20px;
 }
@@ -114,10 +119,11 @@ section {
     grid-column: 2/3;
     grid-row: 1/2;
     border-radius: 15px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 300px;
 }
 
 .my-state {
@@ -184,7 +190,7 @@ hr {
     border-top-right-radius: 15px;
     align-items: center;
     justify-content: center;
-    display: flex;
+    display: grid;
 }
 
 ul {
@@ -199,7 +205,7 @@ ul li {
 }
 
 .link {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     margin: 40px;
@@ -221,8 +227,7 @@ ul li {
 /*Footer*/
 
 footer {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
     justify-content: center;
     background-color: rgb(58, 7, 110);
