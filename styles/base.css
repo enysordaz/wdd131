@@ -67,7 +67,7 @@ nav a:hover {
 /*Main body and cards with information*/
 main {
     display: grid;
-    grid-template-columns: 70% auto;
+    grid-template-columns: 1fr auto;
 }
 
 section {
