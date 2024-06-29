@@ -18,8 +18,8 @@
 
     header, 
     footer {
-        border-top: 15px solid var(--color-yellow);
-        border-bottom: 15px solid var(--color-yellow);
+        border-top: 12px solid var(--color-yellow);
+        border-bottom: 12px solid var(--color-yellow);
     }
 
     main {
