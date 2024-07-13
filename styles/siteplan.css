@@ -20,6 +20,16 @@ body {
     align-content: center;
 }
 
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.info-container {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
 h1 {
     font-family: "Raleway", sans-serif;
     font-size: 35px;
@@ -130,6 +140,7 @@ hr{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: var(--text-color);
 }
 
 .typography-title {
@@ -172,10 +183,21 @@ hr{
     font-size: 20px;
 }
 
-
 img {
     height: 300px;
     width: auto;
+}
+
+/*Footer*/
+
+footer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 20px;
 }
 
 @media (min-width: 650px) {
