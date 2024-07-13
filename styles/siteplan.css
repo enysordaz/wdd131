@@ -122,11 +122,26 @@ hr{
 }
 
 /*Typography style*/
-.typography-title,
-.wireframe-title {
+
+.typography-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 5px;
+    place-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.typography-title {
+    grid-column: 1/4;
     padding-top: 20px;
     font-weight: 500;
     font-size: 20px;
+}
+
+.pt1 {
+    grid-column: 1/2;
 }
 
 .title {
@@ -134,15 +149,30 @@ hr{
     font-weight: 600;
 }
 
+.pt2 {
+    grid-column: 2/3;
+}
+
 .sub {
     font-size: 25px;
     font-weight: 200;
+}
+
+.pt3 {
+    grid-column: 3/4;
 }
 
 .pa {
     font-size: 15px;
     font-weight: 300;
 }
+
+.wireframe-title {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
 
 img {
     height: 300px;
