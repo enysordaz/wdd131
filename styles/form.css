@@ -1,0 +1,30 @@
+/*Header*/
+header {
+    background-color: #3a076e;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid #3a076e;
+}
+
+
+/*Footer*/
+
+footer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a076e;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+@media (min-width: 650px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: #ffffff;
+    }
+}
