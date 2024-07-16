@@ -10,14 +10,62 @@
     <link rel="stylesheet" href="styles/form.css">
     <!--Link to script-->
     <script src="scripts/form.js" defer></script>
-    <!--Link/s to fons styles-->
+    <script src="scripts/getdates.js" defer></script>
+    <!--Link/s to fonts styles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="page-title">
         <h1>Product Review</h1>
     </header>
     <main>
-
+        <form method="get" action="review.html" class="pform">
+            <fieldset>
+                <label class="label-text">
+                    Product Name<span class="required-sign">*</span>
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected> Choose a Product... &#9662;</option>
+                    </select>
+                </label>
+                <label class="label-text">
+                    Overall Rating<span class="required-sign">*</span>
+                    <div id="star-rating">
+                        <label><input type="radio" name="stars" id="star1" value="1" required>&star;</label>
+                        <label><input type="radio" name="stars" id="star2" value="2" required>&star;&star;</label>
+                        <label><input type="radio" name="stars" id="star3" value="3" required>&star;&star;&star;</label>
+                        <label><input type="radio" name="stars" id="star4" value="4" required>&star;&star;&star;&star;</label>
+                        <label><input type="radio" name="stars" id="star5" value="5" required>&star;&star;&star;&star;&star;</label>
+                    </div>
+                </label>
+                <label class="label-text">
+                    Date of Installation<span class="required-sign">*</span>
+                    <input type="date" id="date-installed" name="date-installed" required>
+                </label>
+                <div class="features-div">
+                    <label class="label-text">
+                        Which features did you find useful in the product? 
+                        <span class="note">(Check all that apply)</span>
+                        <label><input type="checkbox" name="features" value="durability">Durability</label>
+                        <label><input type="checkbox" name="features" value="ease-use">Ease of Use</label>
+                        <label><input type="checkbox" name="features" value="performance">Performance</label>
+                        <label><input type="checkbox" name="features" value="design">Design</label>
+                    </label>
+                </div>
+                <label class="label-text">
+                    Written Review <span class="note">(optional)</span>
+                    <textarea name="review" id="review"></textarea>
+                </label>
+                <label class="label-text">
+                    Your Name <span class="note">(optional)</span>
+                    <input type="text" id="user" name="user">
+                </label>
+    
+                <input type="submit" value="Post Review">
+                <p class="symbol">* All sections with this symbol are required</p>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <div>

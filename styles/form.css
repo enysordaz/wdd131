@@ -1,10 +1,174 @@
+:root {
+    --primary-color: #3a076e;
+    --secondary-color:#663498;
+    --accent1-color: #8f6ab7;
+    --accent2-color: #eee2ff;
+    --accent3-color: #eae4f2;
+    --text-color: #0A0A0B;
+    --note-color: #3b3b3b;
+    --title-color: #eaeaea;
+    --page-bg: #ffffff;
+    --required-color: #6f0101;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--primary-color);
+}
+
 /*Header*/
 header {
-    background-color: #3a076e;
+    background-color: var(--primary-color);
     display: grid;
     grid-gap: 1rem;
     padding: 20px;
-    border: 1px solid #3a076e;
+    border: 1px solid var(--primary-color);
+    color: var(--title-color);
+}
+
+/*Form style*/
+.pform {
+    background-color: var(--accent2-color);
+    padding: 1rem;
+    margin: auto;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pform fieldset {
+    border: none;
+}
+
+.pform label {
+    display: block;
+    padding-top: 10px;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.pform div {
+    padding-top: 1rem;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.pform input[type="text"],
+.pform input[type="date"],
+.pform select,
+.pform textarea,
+.pform input[type="submit"] {
+    outline: none;
+    display: block;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--accent3-color);
+    color: var(--secondary-color);
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.pform input[type="submit"] {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    box-shadow: 2px 2px 2px var(--accent1-color);
+    color: var(--title-color);
+    border-radius: 5px;
+    padding: 1rem;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    transition: .3s;
+}
+
+/*Hover and Active*/
+.pform input[type="submit"]:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 2px 2px 2px var(--secondary-color);
+    transition: .3s;
+}
+
+.pform input[type="submit"]:active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.pform textarea {
+    height: 150px;
+}
+
+.label-text {
+    font-size: 22px;
+}
+
+.note {
+    font-style: italic;
+    color: var(--note-color);
+    font-size: 15px;
+}
+
+.required-sign {
+    color: var(--required-color);
+}
+
+.symbol {
+    color: var(--note-color);
+    font-size: 15px;
+}
+
+.pform input:required,
+.pform select:required {
+    border-left: 10px solid #6f200e;
+}
+
+.pform input:required:valid,
+.pform select:required:valid {
+    border-left: 10px solid #035c03;
+}
+
+/*Radio and checkboxes style*/
+.pform input[type="radio"],
+.pform input[type="cbeckbox"] {
+    margin-right: 10px;
+}
+
+#star-rating {
+    margin-top: -0.5rem;
+}
+
+#star-rating input {
+    width: 1.2rem;
+    height: 1.2rem;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 0.4rem;
+}
+
+
+.features-div {
+    margin-top: -0.5rem;
+}
+
+.features-div input {
+    width: 1.2rem;
+    height: 1.2rem;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 0.4rem;
 }
 
 
@@ -14,9 +178,10 @@ footer {
     display: grid;
     align-items: center;
     justify-content: center;
-    background-color: #3a076e;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--title-color);
     font-size: 20px;
+    padding: 1rem;
 }
 
 
@@ -26,5 +191,13 @@ footer {
         align-items: center;
         justify-content: space-around;
         color: #ffffff;
+    }
+
+    h1 {
+        color: var(--title-color);
+    }
+
+    .pform {
+        max-width: 800px;
     }
 }
