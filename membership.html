@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Enys Ordaz">
+    <meta name="description" content="WDD 131 | Dynamic Web Fundamentals | Enys Ordaz | Membership form.">
+    <title>Membership</title>
+    <!--Link to page styles-->
+    <link rel="stylesheet" href="styles/final-project.css">
+    
+    <!--Link to scripts-->
+    <script src="scripts/final-project.js" defer></script>
+    <!--Link to font styles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img class="logo" src="images/logo.webp" alt="WSTC Logo">
+            <h1>W.S.T.C</h1>
+        </div>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="final-project.html" id="home">Home</a>
+            <a href="training.html" id="training">Training</a>
+            <a href="benefits.html" id="benefits">Benefits</a>
+            <a href="membership.html" id="membership" class="active">Membership</a>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="pform">
+            <fieldset>
+                <legend>
+                    Your Name <span class="required-sign">*</span>
+                </legend>
+                <input type="text" id="user" name="user" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Your email <span class="required-sign">*</span>
+                </legend>
+                <input type="text" id="email" name="email" required>
+            </fieldset>
+
+            <fieldset>
+                 <legend>Program Selection <span class="required-sign">*</span>
+                 <select name="program" id="program" required>
+                     <option value="" disabled selected> Choose a Program... &#9662;</option>
+                 </select>
+             </fieldset>
+
+             <fieldset>
+                <legend>
+                    Beginning your journey! <span class="note">(optional)</span>
+                </legend>
+                <input type="date" id="date-installed" name="date-installed">
+            </fieldset>
+
+             <fieldset>
+                 <legend>
+                    Any questions for us? <span class="note">(optional)</span>
+                 </legend>
+                 <textarea name="review" id="review"></textarea>
+             </fieldset>
+ 
+             <input type="submit" value="Become a Member">
+             <p class="symbol">* All sections with this symbol are required</p>
+         </form>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <img src="images/white-icon.svg" alt="icon" width="32" height="32" loading="lazy">
+            <p>
+            ©<span id="currentyear"></span> | W.S.T.C - WASATCH STRENGTH TRAINING CLUB | Utah
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
